@@ -25,7 +25,7 @@
      int aliveC = 225; //color for alive cells
      int deadC = 25; //color for dead cells
      int s = 10; //variable to control size of cells
-     int rate = 9; //rate at which cells are spawned at start
+     int rate = 20; //rate at which cells are spawned at start
  };
 
 

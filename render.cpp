@@ -73,7 +73,6 @@ void render::loop() {
         }
     }
 
-    std::cout << sizeof(tmpGrid)/sizeof(tmpGrid[0]) << std::endl;
     //update the grid to reflect newly calculated states and print grid to the screen
     for(int i = 0; i < sizeof(tmpGrid)/sizeof(tmpGrid[0]); i++) {
         grid[i] = tmpGrid[i];
