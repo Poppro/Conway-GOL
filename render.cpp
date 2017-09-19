@@ -65,9 +65,9 @@ void render::loop() {
             //based on # of adjacent, make decision on cells updated state
             if(adj < 2 && grid[cI].getFillColor() == sf::Color(aliveC,aliveC,aliveC)) {
                 tmpGrid[cI].setFillColor(sf::Color(deadC, deadC, deadC));
-            } else if(adj >= 3 && grid[cI].getFillColor() == sf::Color(deadC, deadC, deadC)) {
+            } else if(adj == 3 && grid[cI].getFillColor() == sf::Color(deadC, deadC, deadC)) {
                 tmpGrid[cI].setFillColor(sf::Color(aliveC,aliveC,aliveC));
-            } else if(adj >= 3 && grid[cI].getFillColor() == sf::Color(aliveC,aliveC,aliveC)) {
+            } else if(adj > 3 && grid[cI].getFillColor() == sf::Color(aliveC,aliveC,aliveC)) {
                 tmpGrid[cI].setFillColor(sf::Color(deadC, deadC, deadC));
             }
         }

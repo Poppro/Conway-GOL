@@ -12,7 +12,7 @@ void application::loop() {
     //setup the window
     sf::RenderWindow window(sf::VideoMode(1200, 1200, 32), "Test Environment");
     render rnd(window);
-    window.setFramerateLimit(5); //framerate for program
+    window.setFramerateLimit(3); //framerate for program
     //window loop
     while (window.isOpen()) {
         window.clear(sf::Color::Black);
